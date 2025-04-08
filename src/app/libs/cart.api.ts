@@ -55,3 +55,23 @@ export async function updateCartItem(
     throw new Error(`Error al actualizar el carrito: ${res.statusText}`);
   }
 }
+// Función para eliminar un ítem específico del carrito
+export async function deleteCartItem(id: string): Promise<void> {
+  const res = await fetch(`${API_BASE}/${route}/${id}`, {
+    method: 'DELETE', // DELETE elimina un recurso
+  });
+
+  if (!res.ok) {
+    throw new Error(`Error al eliminar el elemento del carrito: ${res.statusText}`);
+  }
+}
+// Función para vaciar todo el carrito (eliminar todos los ítems)
+export async function clearCart(): Promise<void> {
+  const res = await fetch(`${API_BASE}/${route}`, {
+    method: 'DELETE', // Al no especificar un ID, se interpreta que se eliminan todos los ítems
+  });
+
+  if (!res.ok) {
+    throw new Error(`Error al vaciar el carrito: ${res.statusText}`);
+  }
+}
