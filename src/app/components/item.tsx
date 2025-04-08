@@ -106,7 +106,7 @@ const Item = ({
 
                 <p className="text-sm text-gray-600">
                   {/* Precio por unidad * cantidad */}
-                  ${(item.product.price * Number(quantities[item.id])).toFixed(2)} c/u
+                  ${(item.product.price * Number(quantities[item.id])).toFixed(2)}
                 </p>
 
                 {/* Controles de cantidad: -, input, + */}

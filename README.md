@@ -60,11 +60,11 @@ tsconfig.json       # Configuración de TypeScript
 
 ## 🌐 Variables de entorno
 
-Crea un archivo `.env.local` basado en el siguiente ejemplo:
+Crea un archivo `.env` basado en el siguiente ejemplo:
 
 ### .env.local
 
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
+NEXT_PUBLIC_API_BASE=http://localhost:3000/api
 
 ## ✅ Pruebas (si usás testing)
 
@@ -81,11 +81,12 @@ npm run test
 - TypeScript
 - App Router
 - Server Components / Server Actions
-- TailwindCSS (opcional)
+- TailwindCSS
 
 ## 🧑‍💻 Autor
 
-Este proyecto fue desarrollado por [Tu Nombre o Equipo].
+Este proyecto fue desarrollado por [Walter Caro].
+Video: https://drive.google.com/file/d/1J2280RM5GrrJerLao2iEQ9yD3-RGDJj9/view?usp=drive_link
 
 ## 🛡️ Licencia
 
