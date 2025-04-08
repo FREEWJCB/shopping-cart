@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Next.js 15 - Starter Project
 
-## Getting Started
+Este es un proyecto base usando **Next.js 15**, con soporte para App Router, Server Actions, API Routes, y TypeScript.
 
-First, run the development server:
+## 🚀 Requisitos
 
-```bash
-npm run dev
-# or
+- Node.js >= 18.x
+- Yarn o npm
+
+## 📦 Instalación
+
+Cloná el repositorio e instalá las dependencias:
+
+yarn install
+# o
+npm install
+
+## 🛠️ Comandos de desarrollo
+
+### Levantar servidor de desarrollo
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# o
+npm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esto iniciará la app en:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Compilar para producción
 
-## Learn More
+yarn build
+# o
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+### Ejecutar app en producción (después de build)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+yarn start
+# o
+npm run start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Analizar el bundle (opcional)
 
-## Deploy on Vercel
+yarn analyze
+# o
+npm run analyze
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Estructura del proyecto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+app/                # Rutas (App Router)
+├── page.tsx        # Página raíz
+├── layout.tsx      # Layout principal
+├── libs/            # Rutas API (Route Handlers)
+├── components/            # Rutas API (Route Handlers)
+components/         # Componentes reutilizables
+public/             # Archivos públicos
+.env                # Variables de entorno
+next.config.js      # Configuración de Next.js
+tsconfig.json       # Configuración de TypeScript
+
+## 🌐 Variables de entorno
+
+Crea un archivo `.env.local` basado en el siguiente ejemplo:
+
+### .env.local
+
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+
+## ✅ Pruebas (si usás testing)
+
+Para ejecutar pruebas (ej: con Vitest o Jest):
+
+yarn test
+# o
+npm run test
+
+## 🧩 Tecnologías usadas
+
+- Next.js 15
+- React 18
+- TypeScript
+- App Router
+- Server Components / Server Actions
+- TailwindCSS (opcional)
+
+## 🧑‍💻 Autor
+
+Este proyecto fue desarrollado por [Tu Nombre o Equipo].
+
+## 🛡️ Licencia
+
+MIT
